@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Goods\Goods.cs" />
+    <Compile Include="Goods\GoodsEnum.cs" />
     <Compile Include="Goods\ISellable.cs" />
     <Compile Include="MallMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
