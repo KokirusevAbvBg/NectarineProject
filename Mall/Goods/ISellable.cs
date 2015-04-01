@@ -4,7 +4,11 @@
 
     public interface ISellable 
     {
-        public void Sell(Goods good)
+        public void SellOne(Goods good)
+        {
+
+        }
+        public void SellSome(Goods good , int quantity)
         {
 
         }
