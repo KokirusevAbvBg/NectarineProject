@@ -1,8 +1,0 @@
-
-namespace Mall.SpaceHolder
-{
-    public enum Floors
-    {
-        Parter, One, Two, Three, Four
-    }
-}
