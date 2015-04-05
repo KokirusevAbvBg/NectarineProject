@@ -1,3 +1,4 @@
+using Mall.SpaceHolder;
 namespace Mall.Staff
 {
     using System;
@@ -7,50 +8,29 @@ namespace Mall.Staff
     {
         //Fields
 
-        private decimal bankBalance;
-
-        private string owner;
-
         private string companyName;
+
+        private Person owner;
+
+        private IList<Employee> personal;
+
+        private IList<ISellable> sellable;
 
         //Constructors
 
-        public SpaceHolder(string companyName, string owner, decimal bankBalance, Booth Booth)
+        public SpaceHolder(string companyName, Person owner, Booth Booth)
         {
             this.CompanyName = companyName;
-            this.Owner = owner;
-            this.BankBalance = bankBalance;
+            this.owner = owner;
             this.Boot = Booth;
-            this.Personal = Personal;
-            this.Sellable = Sellable;
+            this.personal = new List<Employee>();
+            this.sellable = new List<ISellable>();
         }
 
         //Properties
 
         public Booth Boot { get; private set; }
 
-        public IList<OldEmployee> Personal { get; private set; }
-
-        public IList<ISellable> Sellable { get; private set; }
-
-        public decimal BankBalance
-        {
-            get { return this.bankBalance; }
-            private set { this.bankBalance = value; }
-        }
-
-        public string Owner
-        {
-            get { return this.owner; }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Please enter owner of the company, using this space");
-                }
-                this.owner = value;
-            }
-        }
         public string CompanyName
         {
             get { return this.companyName; }
