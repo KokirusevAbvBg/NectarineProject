@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
-    <Compile Include="Basic\Loans.cs" />
+    <Compile Include="Basic\ILoans.cs" />
     <Compile Include="Goods\Goods.cs" />
     <Compile Include="Goods\GoodsEnum.cs" />
     <Compile Include="Goods\ISellable.cs" />

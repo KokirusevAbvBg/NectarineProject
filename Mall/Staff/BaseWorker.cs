@@ -2,19 +2,9 @@
 {
     using System;
 
-    public class BaseWorker : OldEmployee
+    public class BaseWorker : Employee
     {
-        //Fields
-
-        //Constructors
         
-        //Enums
-        
-        //Interfaces
-
-        //Properties
-
-        //Methods
 
     }
 }
