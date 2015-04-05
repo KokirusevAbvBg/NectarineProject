@@ -59,12 +59,17 @@
     <Compile Include="Staff\IEmployee.cs" />
     <Compile Include="Staff\IPromote.cs" />
     <Compile Include="Staff\IPerson.cs" />
+    <Compile Include="Staff\ManagementType.cs" />
+    <Compile Include="Staff\ManagmentWorkers.cs" />
     <Compile Include="Staff\Person.cs" />
     <Compile Include="Staff\Promoter.cs" />
+    <Compile Include="Staff\PromotionMaterials.cs" />
+    <Compile Include="Staff\Responsibilities.cs" />
     <Compile Include="Staff\Security.cs" />
     <Compile Include="Staff\Seller.cs" />
     <Compile Include="Staff\Sex.cs" />
     <Compile Include="Staff\Uniform.cs" />
+    <Compile Include="Staff\Weapons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

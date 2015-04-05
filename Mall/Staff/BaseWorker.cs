@@ -23,21 +23,21 @@
         }
         
         //*************************************************************************** Constructors
-        BaseWorker()
+        public BaseWorker()
             : base()
         {
             this.WorkUniform = Uniform.No_uniform;
             this.OperationFloor = Floors.NotAsigned;
         }
         
-        BaseWorker(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, uint skill, Uniform uniform, Floors floor)
+        public BaseWorker(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, Floors floor)
             : base(name, age, gender, money, salary, workhours,skill)
         {
             this.WorkUniform = uniform;
             this.OperationFloor = floor;
         }
 
-        //*************************************************************************** Methids
+        //*************************************************************************** Methods
         public override string ToString()
         {
             string employeeInfo = base.ToString();

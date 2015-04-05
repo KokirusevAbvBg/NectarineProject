@@ -9,7 +9,7 @@ namespace Mall.Staff
         //*************************************************************************** fields/Properties 
         private decimal slary;
         private int workhours;
-        private uint skill;
+        private int skill;
         
         public decimal Salary
         {
@@ -43,10 +43,10 @@ namespace Mall.Staff
             }
         }
         
-        public uint Skill
+        public int Skill
         {
             get { return skill; }
-            private set
+            set
             {
                 if (value < 0)
                 {
@@ -64,7 +64,7 @@ namespace Mall.Staff
             this.Skill = 10;
         }
 
-        public Employee(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, uint skill)
+        public Employee(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill)
             : base(name, age, gender, money)
         {
             this.Salary = salary;
