@@ -4,12 +4,13 @@ namespace Mall.Staff
     using System;
     using Mall.Basic;
 
-    class Employee : Person, IPerson, IEmployee
+    public class Employee : Person, IPerson, IEmployee, IPromote
     {
         //*************************************************************************** fields/Properties 
         private decimal slary;
         private int workhours;
-
+        private uint skill;
+        
         public decimal Salary
         {
             get
@@ -41,20 +42,77 @@ namespace Mall.Staff
                 this.workhours = value;
             }
         }
+        
+        public uint Skill
+        {
+            get { return skill; }
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Skill increase must be positive!");
+                }
+                skill = value;
+            }
+        }
 
         //*************************************************************************** Constructors
         public Employee() : base()
         {
             this.Salary = 0;
             this.Workhours = 0;
+            this.Skill = 10;
         }
 
-        public Employee(string name, byte age, Sex gender, decimal money, decimal salary, int workhours)
+        public Employee(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, uint skill)
             : base(name, age, gender, money)
         {
             this.Salary = salary;
             this.Workhours = workhours;
+            this.Skill = skill;
         }
 
+        //*************************************************************************** Methods
+        
+        public virtual void SmallPromotion()
+        {
+            this.Salary += 50;
+            this.Skill += 15;
+        }
+
+        public virtual void BigPromotion()
+        {
+            this.Salary += 150;
+            this.Skill += 50;
+        }
+
+        public virtual void Discipline()
+        {
+            this.personalBalance.Pay(20);
+            this.Skill += 5;
+        }
+
+        public void ChangeSkill(uint value)
+        {
+            if (this.skill+value>=0)
+            {
+                this.skill += value;
+            }
+            else
+            {
+                throw new ArgumentException("Skill cannot be changed with such value!");
+            }
+        }
+
+        public override string ToString()
+        {
+            string personalInfo = base.ToString();
+            string employeeInfo = personalInfo + string.Format(@"
+    Salary: {0}
+    Working Hours: {1}
+    Skill: {2}",
+               this.Salary, this.Workhours, this.Skill);
+            return employeeInfo;
+        }
     }
 }

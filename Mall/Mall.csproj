@@ -54,16 +54,17 @@
     <Compile Include="SpaceHolder\SpaceHolder.cs" />
     <Compile Include="Staff\BaseWorker.cs" />
     <Compile Include="Staff\Cleaner.cs" />
+    <Compile Include="Staff\CleaningStuff.cs" />
     <Compile Include="Staff\Employee.cs" />
-    <Compile Include="Staff\OldEmployee.cs" />
     <Compile Include="Staff\IEmployee.cs" />
-    <Compile Include="Staff\MoneySecurity.cs" />
+    <Compile Include="Staff\IPromote.cs" />
     <Compile Include="Staff\IPerson.cs" />
     <Compile Include="Staff\Person.cs" />
     <Compile Include="Staff\Promoter.cs" />
     <Compile Include="Staff\Security.cs" />
     <Compile Include="Staff\Seller.cs" />
     <Compile Include="Staff\Sex.cs" />
+    <Compile Include="Staff\Uniform.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

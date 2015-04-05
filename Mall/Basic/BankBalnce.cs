@@ -116,5 +116,10 @@
                 throw new ArgumentException("Sum must be positive!");
             }
         }
+
+        public decimal ShowBalance()
+        {
+            return this.Balance;
+        }
     }
 }

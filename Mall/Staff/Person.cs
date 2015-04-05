@@ -3,13 +3,13 @@
     using System;
     using Mall.Basic;
 
-    class Person:IPerson
+    public class Person:IPerson
     {
         //*************************************************************************** fields/Properties  
         private string name;
         private byte age;
         private Sex gender;
-        private BankBalnce personalBalance;
+        public BankBalnce personalBalance;
 
         public string Name
         {
@@ -75,6 +75,18 @@
             this.Age = age;
             this.Gender = genderInput;
             this.personalBalance = new BankBalnce(money);
+        }
+
+        //*************************************************************************** Methods
+        public override string ToString()
+        {
+            string personalInfo = String.Format(@"
+    Name: {0}
+    Age: {1}
+    Gender: {2}
+    Balance: {3}",
+                 this.Name, this.Age, this.Gender, this.personalBalance.ShowBalance());
+            return personalInfo;
         }
     }
 }
