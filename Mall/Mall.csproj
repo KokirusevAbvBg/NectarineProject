@@ -45,8 +45,9 @@
     <Compile Include="Basic\BankBalnce.cs" />
     <Compile Include="Basic\ILoans.cs" />
     <Compile Include="Goods\Goods.cs" />
-    <Compile Include="Goods\GoodsEnum.cs" />
     <Compile Include="Goods\ISellable.cs" />
+    <Compile Include="Goods\Sellable.cs" />
+    <Compile Include="Goods\Services.cs" />
     <Compile Include="MallMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpaceHolder\Booth.cs" />

@@ -1,14 +1,15 @@
-﻿namespace Mall.Staff
+﻿namespace Mall.Goods
 {
     using System;
 
     public interface ISellable 
     {
-        public void SellOne(Goods good)
+        public void Sell(string name)
         {
 
         }
-        public void SellSome(Goods good , int quantity)
+
+        public void MakeDiscount(decimal percent)
         {
 
         }

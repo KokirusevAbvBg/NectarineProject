@@ -3,8 +3,10 @@ namespace Mall.Staff
 {
     using System;
     using System.Collections.Generic;
+    
+    using Mall.Goods;
 
-    public class SpaceHolder
+    public class SpaceHolder :ISellable
     {
         //Fields
 
@@ -14,7 +16,7 @@ namespace Mall.Staff
 
         private IList<Employee> personal;
 
-        private IList<ISellable> sellable;
+        private IList<Sellable> sellables;
 
         //Constructors
 
@@ -24,7 +26,7 @@ namespace Mall.Staff
             this.owner = owner;
             this.Boot = Booth;
             this.personal = new List<Employee>();
-            this.sellable = new List<ISellable>();
+            this.sellables = new List<Sellable>();
         }
 
         //Properties
@@ -50,7 +52,39 @@ namespace Mall.Staff
 
         //Interfaces
 
-        //Methods      // TO DO - May be some method - if bankBalance is less than zero - company should leave the mall
+        //Methods      
 
+        public void AddServices(string name, decimal price)
+        {
+            Sellable service = new Services(name, price);
+            this.sellables.Add(service);
+        }
+
+        public void AddGoods(string type, decimal unitPrice, int quantity)
+        {
+            decimal balnce = this.owner.personalBalance.ShowBalance();
+            decimal totalPrice = unitPrice*quantity;
+
+            if (balnce >= totalPrice)
+            {
+                Sellable goods = new Goods(type, unitPrice, quantity);
+                this.owner.personalBalance.Pay(totalPrice);
+                Console.WriteLine("Goods bought from company successful!");
+            }
+            
+        }
+
+        public void Sell(string name)
+        {
+            throw new NotImplementedException();
+            //must be linq expression to this.sellables
+        }
+
+        public void MakeDiscount(decimal percent)
+        {
+            throw new NotImplementedException();
+            //must be linq expression to this.sellables
+            //this.Price -= this.Price * (percent / 100);
+        }
     }
 }
