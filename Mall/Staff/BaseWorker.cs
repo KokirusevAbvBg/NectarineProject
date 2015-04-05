@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class BaseWorker : Employee
+    public class BaseWorker : OldEmployee
     {
         //Fields
 

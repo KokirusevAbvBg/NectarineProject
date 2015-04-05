@@ -29,7 +29,7 @@ namespace Mall.Staff
 
         public Booth Boot { get; private set; }
 
-        public IList<Employee> Personal { get; private set; }
+        public IList<OldEmployee> Personal { get; private set; }
 
         public IList<ISellable> Sellable { get; private set; }
 

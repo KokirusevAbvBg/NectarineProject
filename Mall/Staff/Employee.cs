@@ -1,65 +1,60 @@
-﻿namespace Mall.Staff
+﻿
+namespace Mall.Staff
 {
     using System;
+    using Mall.Basic;
 
-    public abstract class Employee
+    class Employee : Person, IPerson, IEmployee
     {
-        //Fields
-        private string name;
-        private double salary;
-        private int workingHours;
+        //*************************************************************************** fields/Properties 
+        private decimal slary;
+        private int workhours;
 
-        //Constructors
-        public Employee(string name, double salary, int workingHours)
+        public decimal Salary
         {
-            this.Name = name;
-            this.Salary = salary;
-            this.WorkingHours = workingHours;
-        }
-
-        //Enums
-
-        //Interfaces
-
-        //Properties
-        public string Name
-        {
-            get;
-            private set
+            get
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Employee name cannot be null or empty!");
-                }
+                return this.slary;
             }
-        }
-
-        public double Salary
-        {
-            get;
-            private set
+            set
             {
                 if (value < 0)
                 {
                     throw new ArgumentException("Employees must not pay to work!");
                 }
+                this.slary = value;
             }
         }
 
-        public int WorkingHours
+        public int Workhours
         {
-            get;
-            private set
+            get
+            {
+                return this.workhours;
+            }
+            set
             {
                 if (value < 0 || value > 12)
                 {
                     throw new ArgumentException("Employee must work between 1 and 12 hours a day!");
                 }
+                this.workhours = value;
             }
         }
 
-        //Methods
-        
+        //*************************************************************************** Constructors
+        public Employee() : base()
+        {
+            this.Salary = 0;
+            this.Workhours = 0;
+        }
+
+        public Employee(string name, byte age, Sex gender, decimal money, decimal salary, int workhours)
+            : base(name, age, gender, money)
+        {
+            this.Salary = salary;
+            this.Workhours = workhours;
+        }
+
     }
 }
-

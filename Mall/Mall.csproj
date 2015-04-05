@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Basic\Balnce.cs" />
+    <Compile Include="Basic\BankBalnce.cs" />
+    <Compile Include="Basic\Loans.cs" />
     <Compile Include="Goods\Goods.cs" />
     <Compile Include="Goods\GoodsEnum.cs" />
     <Compile Include="Goods\ISellable.cs" />
@@ -51,10 +54,15 @@
     <Compile Include="Staff\BaseWorker.cs" />
     <Compile Include="Staff\Cleaner.cs" />
     <Compile Include="Staff\Employee.cs" />
+    <Compile Include="Staff\OldEmployee.cs" />
+    <Compile Include="Staff\IEmployee.cs" />
     <Compile Include="Staff\MoneySecurity.cs" />
+    <Compile Include="Staff\IPerson.cs" />
+    <Compile Include="Staff\Person.cs" />
     <Compile Include="Staff\Promoter.cs" />
     <Compile Include="Staff\Security.cs" />
     <Compile Include="Staff\Seller.cs" />
+    <Compile Include="Staff\Sex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
