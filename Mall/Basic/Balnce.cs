@@ -2,7 +2,7 @@
 {
     abstract class Balnce
     {
-
+        //Balance for employes and clients
         protected decimal Balance { get; set; }
 
         abstract public void GetPaid(decimal sum)
