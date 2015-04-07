@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
     using Mall.SpaceHolder;
-    using Mall.Interfaces
+    using Mall.Interfaces;
     using Mall.Common;
 
     public class Security : BaseWorker, IPerson, IEmployee, IPromote

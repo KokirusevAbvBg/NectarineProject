@@ -6,7 +6,7 @@ namespace Mall.Staff
     using Mall.Goods;
     using Mall.Interfaces;
 
-    public class SpaceHolder :ISellable
+    public class SpaceHolder : ISellable
     {
         //Fields
 
@@ -33,6 +33,16 @@ namespace Mall.Staff
 
         public Booth Boot { get; private set; }
 
+        public List<Sellable> Sellable
+        {
+            get;
+            set;
+        }
+        public List<Employee> Sellable
+        {
+            get;
+            set;
+        }
         public string CompanyName
         {
             get { return this.companyName; }
@@ -46,7 +56,7 @@ namespace Mall.Staff
             }
         }
 
-       
+
 
         //Enums
 
@@ -63,7 +73,7 @@ namespace Mall.Staff
         public void AddGoods(string type, decimal unitPrice, int quantity)
         {
             decimal balnce = this.owner.personalBalance.ShowBalance();
-            decimal totalPrice = unitPrice*quantity;
+            decimal totalPrice = unitPrice * quantity;
 
             if (balnce >= totalPrice)
             {
@@ -71,7 +81,7 @@ namespace Mall.Staff
                 this.owner.personalBalance.Pay(totalPrice);
                 Console.WriteLine("Goods bought from company successful!");
             }
-            
+
         }
 
         public void Sell(string name)

@@ -46,10 +46,12 @@
     <Compile Include="Common\CleaningStuff.cs" />
     <Compile Include="Common\FemeleNames.cs" />
     <Compile Include="Common\Floors.cs" />
+    <Compile Include="Common\Foods.cs" />
     <Compile Include="Common\MaleNames.cs" />
     <Compile Include="Common\ManagementType.cs" />
     <Compile Include="Common\PromotionMaterials.cs" />
     <Compile Include="Common\Responsibilities.cs" />
+    <Compile Include="Common\Services.cs" />
     <Compile Include="Common\Sex.cs" />
     <Compile Include="Common\Uniform.cs" />
     <Compile Include="Common\Weapons.cs" />
@@ -65,6 +67,7 @@
     <Compile Include="SpaceHolder\Company.cs" />
     <Compile Include="SpaceHolder\SpaceHolder.cs" />
     <Compile Include="Staff\AccountantM.cs" />
+    <Compile Include="Staff\AddM.cs" />
     <Compile Include="Staff\BaseWorker.cs" />
     <Compile Include="Staff\Cleaner.cs" />
     <Compile Include="Staff\Employee.cs" />

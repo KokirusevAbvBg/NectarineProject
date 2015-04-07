@@ -37,6 +37,8 @@ namespace Mall.Goods
         {
             this.Price -= this.Price * (percent / 100);
         }
+
+
     }
 
 }

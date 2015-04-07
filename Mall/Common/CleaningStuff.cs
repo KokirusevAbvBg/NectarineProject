@@ -10,6 +10,6 @@
         Steam_Cleaner = 40,
         AutomaticFlourClaeanigMachine = 150,
         Usual_Cleanig_Chemical = 15,
-        Fine_AllSurface_Chemical = 45 // this is comment 
+        Fine_AllSurface_Chemical = 45
     }
 }
