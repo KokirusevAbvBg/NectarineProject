@@ -3,6 +3,7 @@
     using System;
     using Mall.Staff;
     using Mall.Interfaces;
+    using Mall.Common;
 
     public class Person : IPerson
     {

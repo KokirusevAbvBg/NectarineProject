@@ -2,6 +2,7 @@
 {
 
     using Mall.Interfaces;
+    using Mall.Common;
 
     class ManagmentWorkers : Employee, IPerson, IEmployee, IPromote
     {

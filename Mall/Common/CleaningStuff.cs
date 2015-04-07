@@ -1,4 +1,4 @@
-﻿namespace Mall.Staff
+﻿namespace Mall.Common
 {
     public enum CleaningStuff
     {

@@ -4,10 +4,10 @@
     using System.Collections.Generic;
     using System.Text;
     using System.Linq;
-
     using Mall.Goods;
     using Mall.SpaceHolder;
     using Mall.Interfaces;
+    using Mall.Common;
 
     class HRM : ManagmentWorkers
     {

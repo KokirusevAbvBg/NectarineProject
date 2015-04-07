@@ -5,6 +5,7 @@
     using System.Collections.Generic;
     using Mall.SpaceHolder;
     using Mall.Interfaces;
+    using Mall.Common;
 
     public class Promoter : BaseWorker, IPerson, IEmployee, IPromote
     {

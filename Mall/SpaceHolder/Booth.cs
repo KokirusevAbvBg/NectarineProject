@@ -3,8 +3,8 @@ namespace Mall.Staff
 {
     using Mall.SpaceHolder;
     using System;
-    using System.Object; 
-    
+    using System.Object;
+    using Mall.Common;
 
     public class Booth 
     {

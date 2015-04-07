@@ -3,9 +3,9 @@
     using System;
     using System.Text;
     using System.Collections.Generic;
-
     using Mall.Goods;
     using Mall.SpaceHolder;
+    using Mall.Common;
 
     public class AccountantM : ManagmentWorkers
     {
