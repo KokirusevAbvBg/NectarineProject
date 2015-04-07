@@ -43,6 +43,14 @@
   <ItemGroup>
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
+    <Compile Include="Common\CleaningStuff.cs" />
+    <Compile Include="Common\Floors.cs" />
+    <Compile Include="Common\ManagementType.cs" />
+    <Compile Include="Common\PromotionMaterials.cs" />
+    <Compile Include="Common\Responsibilities.cs" />
+    <Compile Include="Common\Sex.cs" />
+    <Compile Include="Common\Uniform.cs" />
+    <Compile Include="Common\Weapons.cs" />
     <Compile Include="Interfaces\ILoans.cs" />
     <Compile Include="Basic\Validators.cs" />
     <Compile Include="Goods\Goods.cs" />
@@ -53,28 +61,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpaceHolder\Booth.cs" />
     <Compile Include="SpaceHolder\Company.cs" />
-    <Compile Include="SpaceHolder\Floors.cs" />
     <Compile Include="SpaceHolder\SpaceHolder.cs" />
     <Compile Include="Staff\AccountantM.cs" />
     <Compile Include="Staff\BaseWorker.cs" />
     <Compile Include="Staff\Cleaner.cs" />
-    <Compile Include="Staff\CleaningStuff.cs" />
     <Compile Include="Staff\Employee.cs" />
     <Compile Include="Staff\HRM.cs" />
     <Compile Include="Interfaces\IEmployee.cs" />
     <Compile Include="Interfaces\IPromote.cs" />
     <Compile Include="Interfaces\IPerson.cs" />
-    <Compile Include="Staff\ManagementType.cs" />
     <Compile Include="Staff\ManagmentWorkers.cs" />
     <Compile Include="Staff\Person.cs" />
     <Compile Include="Staff\Promoter.cs" />
-    <Compile Include="Staff\PromotionMaterials.cs" />
-    <Compile Include="Staff\Responsibilities.cs" />
     <Compile Include="Staff\Security.cs" />
     <Compile Include="Staff\Seller.cs" />
-    <Compile Include="Staff\Sex.cs" />
-    <Compile Include="Staff\Uniform.cs" />
-    <Compile Include="Staff\Weapons.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
