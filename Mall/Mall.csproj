@@ -55,6 +55,7 @@
     <Compile Include="SpaceHolder\Company.cs" />
     <Compile Include="SpaceHolder\Floors.cs" />
     <Compile Include="SpaceHolder\SpaceHolder.cs" />
+    <Compile Include="Staff\AccountantM.cs" />
     <Compile Include="Staff\BaseWorker.cs" />
     <Compile Include="Staff\Cleaner.cs" />
     <Compile Include="Staff\CleaningStuff.cs" />

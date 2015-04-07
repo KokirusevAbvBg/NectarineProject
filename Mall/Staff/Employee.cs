@@ -10,7 +10,7 @@ namespace Mall.Staff
         private decimal slary;
         private int workhours;
         private int skill;
-        
+
         public decimal Salary
         {
             get
