@@ -1,3 +1,4 @@
 C:\Users\Lero\Documents\GitHub\NectarineProject\Mall\bin\Debug\Mall.exe.config
 C:\Users\NikIvRu\Desktop\NectarineProject\Mall\bin\Debug\Mall.exe.config
 C:\Users\Lero\Documents\GitHub\Mall\NectarineProject\Mall\bin\Debug\Mall.exe.config
+C:\Users\pc\Desktop\NectarineProject\Mall\bin\Debug\Mall.exe.config
