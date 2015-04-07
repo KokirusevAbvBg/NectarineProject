@@ -43,10 +43,10 @@
   <ItemGroup>
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
-    <Compile Include="Basic\ILoans.cs" />
+    <Compile Include="Interfaces\ILoans.cs" />
     <Compile Include="Basic\Validators.cs" />
     <Compile Include="Goods\Goods.cs" />
-    <Compile Include="Goods\ISellable.cs" />
+    <Compile Include="Interfaces\ISellable.cs" />
     <Compile Include="Goods\Sellable.cs" />
     <Compile Include="Goods\Services.cs" />
     <Compile Include="MallMain.cs" />
@@ -61,9 +61,9 @@
     <Compile Include="Staff\CleaningStuff.cs" />
     <Compile Include="Staff\Employee.cs" />
     <Compile Include="Staff\HRM.cs" />
-    <Compile Include="Staff\IEmployee.cs" />
-    <Compile Include="Staff\IPromote.cs" />
-    <Compile Include="Staff\IPerson.cs" />
+    <Compile Include="Interfaces\IEmployee.cs" />
+    <Compile Include="Interfaces\IPromote.cs" />
+    <Compile Include="Interfaces\IPerson.cs" />
     <Compile Include="Staff\ManagementType.cs" />
     <Compile Include="Staff\ManagmentWorkers.cs" />
     <Compile Include="Staff\Person.cs" />
