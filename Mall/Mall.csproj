@@ -60,6 +60,7 @@
     <Compile Include="Staff\Cleaner.cs" />
     <Compile Include="Staff\CleaningStuff.cs" />
     <Compile Include="Staff\Employee.cs" />
+    <Compile Include="Staff\HRM.cs" />
     <Compile Include="Staff\IEmployee.cs" />
     <Compile Include="Staff\IPromote.cs" />
     <Compile Include="Staff\IPerson.cs" />
