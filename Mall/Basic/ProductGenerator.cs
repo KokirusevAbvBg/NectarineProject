@@ -9,6 +9,8 @@ namespace Mall.Basic
     {
         public Goods generateGoods() 
         {
+            string randGoodType;
+
             throw new NotImplementedException();
         }
 
