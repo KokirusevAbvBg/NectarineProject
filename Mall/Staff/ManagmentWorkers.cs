@@ -1,5 +1,8 @@
 ﻿namespace Mall.Staff
 {
+
+    using Mall.Interfaces;
+
     class ManagmentWorkers : Employee, IPerson, IEmployee, IPromote
     {
         //*************************************************************************** fields/Properties

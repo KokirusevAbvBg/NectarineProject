@@ -2,8 +2,9 @@
 {
     using System;
     using Mall.Staff;
+    using Mall.Interfaces;
 
-    public class Person:IPerson
+    public class Person : IPerson
     {
         //*************************************************************************** fields/Properties  
         private string name;

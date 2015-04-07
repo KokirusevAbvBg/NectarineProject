@@ -7,6 +7,7 @@
 
     using Mall.Goods;
     using Mall.SpaceHolder;
+    using Mall.Interfaces;
 
     class HRM : ManagmentWorkers
     {

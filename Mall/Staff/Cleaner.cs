@@ -5,6 +5,7 @@
     using System.Collections.Generic;
 
     using Mall.SpaceHolder;
+    using Mall.Interfaces;
 
     public class Cleaner : BaseWorker,IPerson, IEmployee, IPromote
     {

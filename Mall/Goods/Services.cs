@@ -1,6 +1,7 @@
 ﻿namespace Mall.Goods
 {
     using System;
+    using Mall.Interfaces;
 
     public class Services : Sellable, ISellable
     {

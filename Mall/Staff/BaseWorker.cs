@@ -3,6 +3,7 @@
     using System;
     using Mall.SpaceHolder;
     using Mall.Staff;
+    using Interfaces;
 
     public class BaseWorker : Employee, IPerson, IEmployee, IPromote
     {

@@ -2,8 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
-
     using Mall.SpaceHolder;
+    using Mall.Interfaces;
 
     public class Security : BaseWorker, IPerson, IEmployee, IPromote
     {

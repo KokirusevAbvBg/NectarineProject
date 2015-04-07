@@ -1,10 +1,10 @@
-using Mall.SpaceHolder;
 namespace Mall.Staff
 {
+    using Mall.SpaceHolder;
     using System;
     using System.Collections.Generic;
-    
     using Mall.Goods;
+    using Mall.Interfaces;
 
     public class SpaceHolder :ISellable
     {

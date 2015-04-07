@@ -1,7 +1,8 @@
 ﻿
 namespace Mall.Goods
 {
-    using System;  
+    using System;
+    using Mall.Interfaces;
 
     abstract class Sellable : ISellable
     {

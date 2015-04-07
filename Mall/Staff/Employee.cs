@@ -3,6 +3,7 @@ namespace Mall.Staff
 {
     using System;
     using Mall.Staff;
+    using Mall.Interfaces;
 
     public class Employee : Person, IPerson, IEmployee, IPromote
     {
