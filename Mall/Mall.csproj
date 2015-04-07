@@ -44,7 +44,9 @@
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
     <Compile Include="Common\CleaningStuff.cs" />
+    <Compile Include="Common\FemeleNames.cs" />
     <Compile Include="Common\Floors.cs" />
+    <Compile Include="Common\MaleNames.cs" />
     <Compile Include="Common\ManagementType.cs" />
     <Compile Include="Common\PromotionMaterials.cs" />
     <Compile Include="Common\Responsibilities.cs" />
