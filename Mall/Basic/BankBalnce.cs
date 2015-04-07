@@ -23,7 +23,7 @@
             {
                 return this.Balance - this.Loan;
             }
-            private set;
+            protected set;
         }
         
         //*************************************************************************** Constructors
