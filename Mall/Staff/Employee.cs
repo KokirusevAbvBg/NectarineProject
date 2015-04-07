@@ -4,6 +4,7 @@ namespace Mall.Staff
     using System;
     using Mall.Staff;
     using Mall.Interfaces;
+    using Mall.Common;
 
     public class Employee : Person, IPerson, IEmployee, IPromote
     {
@@ -93,7 +94,7 @@ namespace Mall.Staff
             this.Skill += 5;
         }
 
-        public void ChangeSkill(uint value)
+        public void ChangeSkill(int value)
         {
             if (this.skill+value>=0)
             {
