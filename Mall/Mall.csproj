@@ -44,6 +44,7 @@
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
     <Compile Include="Basic\HuamanGenerator.cs" />
+    <Compile Include="Basic\ProductGenerator.cs" />
     <Compile Include="Common\CleaningStuff.cs" />
     <Compile Include="Common\FemeleNames.cs" />
     <Compile Include="Common\Floors.cs" />

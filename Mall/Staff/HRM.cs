@@ -11,9 +11,9 @@
 
     class HRM : ManagmentWorkers
     {
-        private List<BaseWorker> staff;
+        private List<Employee> staff;
 
-        public List<BaseWorker> Staff
+        public List<Employee> Staff
         {
             get { return this.staff; }
         }
@@ -25,21 +25,21 @@
         public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform)
             :base(name,age,gender,money,salary,workhours,skill,uniform,ManagementType.HR)
         {
-            this.staff = new List<BaseWorker>();
+            this.staff = new List<Employee>();
         }
         /// <summary>
         /// Asigns new HR and give it the current list of staff
         /// </summary>
         /// <param name="oldList">the current list of staff</param>
-        public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<BaseWorker> oldList)
+        public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<Employee> oldList)
             : base(name, age, gender, money, salary, workhours, skill, uniform, ManagementType.HR)
         {
             this.staff = oldList;
         }
 
-        public void GetCompanyWorkers()
+        public void GetCompanyWorkers(SpaceHolder spaceholder)
         {
-
+            staff = spaceholder.Employees;
         }
         
         public void HireCleaner(string name, byte age, Sex gender, decimal initialMoney)
@@ -71,7 +71,24 @@
             }
         }
 
-        public void GiveSmallPrommotion(string )
+        public void GiveSmallPrommotion(Employee employee)
+        {
+            employee.SmallPromotion();
+        }
 
+        public void GiveBigPromotion(Employee employee)
+        {
+            employee.BigPromotion();
+        }
+
+        public void PrintAllWorkers(SpaceHolder spaceholder)
+        {
+            Console.WriteLine("List of workers of {0}", spaceholder.Company.CompanyName);
+            var employeelist = spaceholder.Employees;
+            foreach (var item in employeelist)
+            {
+                Console.WriteLine(item.ToString());
+            }
+        }
     }
 }

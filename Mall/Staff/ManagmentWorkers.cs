@@ -3,6 +3,7 @@
 
     using Mall.Interfaces;
     using Mall.Common;
+    using Mall.SpaceHolder;
 
     class ManagmentWorkers : Employee, IPerson, IEmployee, IPromote
     {
@@ -51,9 +52,10 @@
             this.Skill += 120;
         }
 
-        public override void Discipline()
+        public override void Discipline(Company company)
         {
             this.personalBalance.Pay(400);
+            company.CompanyAccount.GetPaid(400);
             this.Skill += 10;
         }
         

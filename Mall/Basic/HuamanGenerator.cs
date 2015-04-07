@@ -129,9 +129,10 @@
                                                     employee.Age,
                                                     employee.Gender,
                                                     employee.personalBalance.ShowBalance(),
-                                                    employee.Salary, employee.Workhours,
-                                                    employee.Skill,
-                                                    Uniform.Semiformal_Suit,
+                                                    1200, 
+                                                    8,
+                                                    100,
+                                                    Uniform.Formal_Suit,
                                                     type);
             return randomManager;
         }

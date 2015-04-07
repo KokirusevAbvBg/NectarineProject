@@ -61,7 +61,12 @@
             Console.WriteLine("Sallary payment succesfull!");
         }
 
-
+        public void PayRent(SpaceHolder spaceHolder)
+        {
+            decimal sum = spaceHolder.Booth.AreaRentalPrice;
+            spaceHolder.Company.CompanyAccount.Pay(sum);
+            Console.WriteLine("Rent sum paid successfull!");
+        }
 
     }
 }

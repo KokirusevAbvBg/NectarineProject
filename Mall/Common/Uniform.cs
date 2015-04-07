@@ -9,6 +9,5 @@
         Security_uniform,
         Casual_Clothes,
         Formal_Suit,
-        Semiformal_Suit,
     }
 }

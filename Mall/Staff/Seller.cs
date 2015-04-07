@@ -79,9 +79,10 @@
             this.Skill += 45;
         }
 
-        public override void Discipline()
+        public override void Discipline(Company company)
         {
             this.personalBalance.Pay(100);
+            company.CompanyAccount.GetPaid(100);
             this.Skill += 5;
         }
 

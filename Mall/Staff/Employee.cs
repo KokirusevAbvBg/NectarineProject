@@ -5,6 +5,7 @@ namespace Mall.Staff
     using Mall.Staff;
     using Mall.Interfaces;
     using Mall.Common;
+    using Mall.SpaceHolder;
 
     public class Employee : Person, IPerson, IEmployee, IPromote
     {
@@ -88,9 +89,10 @@ namespace Mall.Staff
             this.Skill += 50;
         }
 
-        public virtual void Discipline()
+        public virtual void Discipline(Company company)
         {
             this.personalBalance.Pay(20);
+            company.CompanyAccount.GetPaid(20);
             this.Skill += 5;
         }
 

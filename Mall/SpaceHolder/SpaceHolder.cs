@@ -23,7 +23,6 @@ namespace Mall.SpaceHolder
 
         private IList<Sellable> sellables;
 
-
         //Constructors
 
         public SpaceHolder(string companyName, decimal initialBalance, Floors floor, decimal area, decimal rent)

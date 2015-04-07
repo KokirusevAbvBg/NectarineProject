@@ -1,5 +1,6 @@
 ﻿namespace Mall.Interfaces
 {
+    using Mall.SpaceHolder;
     interface IPromote
     {
         public void SmallPromotion()
@@ -10,7 +11,7 @@
         {
 
         }
-        public void Discipline()
+        public void Discipline(Company company)
         {
 
         }
