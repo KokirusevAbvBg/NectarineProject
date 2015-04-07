@@ -8,7 +8,7 @@
     {
         //Fields
         private string goodType;
-        private int quantity;
+        private int quantity; 
         
         //Constructors
 
