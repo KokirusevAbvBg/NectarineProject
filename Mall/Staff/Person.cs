@@ -1,7 +1,7 @@
 ﻿namespace Mall.Staff
 {
     using System;
-    using Mall.Basic;
+    using Mall.Staff;
 
     public class Person:IPerson
     {

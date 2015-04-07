@@ -1,7 +1,8 @@
-﻿namespace Mall.Basic
+﻿namespace Mall.Staff
 {
     using System;
     using Mall.Interfaces;
+
     class BankBalnce: Balnce, ILoans
     {
         //*************************************************************************** constants

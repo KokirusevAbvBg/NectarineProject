@@ -2,7 +2,7 @@
 {
     
     using System;
-
+    using Mall.Interfaces;
 
     public class Goods : Sellable, ISellable
     {

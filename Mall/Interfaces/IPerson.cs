@@ -1,6 +1,6 @@
-﻿namespace Mall.Intefaces
+﻿namespace Mall.Interfaces
 {
-    using Mall.Basic;
+    using Mall.Staff;
 
     interface IPerson
     {

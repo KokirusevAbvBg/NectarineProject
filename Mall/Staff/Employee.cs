@@ -2,7 +2,7 @@
 namespace Mall.Staff
 {
     using System;
-    using Mall.Basic;
+    using Mall.Staff;
 
     public class Employee : Person, IPerson, IEmployee, IPromote
     {

@@ -1,4 +1,4 @@
-﻿namespace Mall.Intefaces
+﻿namespace Mall.Interfaces
 {
     using System;
 
