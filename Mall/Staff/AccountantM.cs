@@ -17,7 +17,7 @@
         }
         
         /// <summary>
-        /// Creating new Acountant with new list od sales
+        /// Creating new Acountant with new list of sales
         /// </summary>
         public AccountantM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform)
             :base(name,age,gender,money,salary,workhours,skill,uniform,ManagementType.Accountant)
