@@ -1,4 +1,4 @@
-﻿namespace Mall.SpaceHolder
+﻿namespace Mall.Common
 {
     enum Floors
     {
