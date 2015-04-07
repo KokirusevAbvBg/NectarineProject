@@ -1,6 +1,7 @@
 ﻿namespace Mall.Interfaces
 {
     using Mall.Staff;
+    using Mall.Common;
 
     interface IPerson
     {

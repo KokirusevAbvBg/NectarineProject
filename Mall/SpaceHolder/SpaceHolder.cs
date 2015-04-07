@@ -1,68 +1,72 @@
-namespace Mall.Staff
+namespace Mall.SpaceHolder
 {
-    using Mall.SpaceHolder;
     using System;
     using System.Collections.Generic;
+    
     using Mall.Goods;
     using Mall.Interfaces;
+    using Mall.Basic;
+    using Mall.Common;
+    using Mall.Staff;
 
     public class SpaceHolder : ISellable
     {
         //Fields
 
-        private string companyName;
+        private Company company;
 
         private Person owner;
 
+        private Booth booth;
+        
         private IList<Employee> personal;
 
         private IList<Sellable> sellables;
 
+
         //Constructors
 
-        public SpaceHolder(string companyName, Person owner, Booth Booth)
+        public SpaceHolder(string companyName, decimal initialBalance, Floors floor, decimal area, decimal rent)
         {
-            this.CompanyName = companyName;
-            this.owner = owner;
-            this.Boot = Booth;
+            this.Company = new Company(companyName, initialBalance);
+            this.owner = HuamanGenerator.PersonGenerator();
+            this.booth = new Booth(floor, area, rent);
             this.personal = new List<Employee>();
+            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Accountant));
+            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.HR));
+            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Product_Manager));
+            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Advertising));
             this.sellables = new List<Sellable>();
         }
 
         //Properties
 
-        public Booth Boot { get; private set; }
+        public Booth Booth
+        {
+            get { return this.booth; }
+        }
 
         public List<Sellable> Sellable
         {
             get;
             set;
         }
-        public List<Employee> Sellable
+        public List<Employee> Employees
         {
             get;
             set;
         }
-        public string CompanyName
+        public Company Company
         {
-            get { return this.companyName; }
+            get { return this.company; }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Please enter correct name for the company, using this space");
-                }
-                this.companyName = value;
+                this.company = value;
             }
         }
 
 
-
-        //Enums
-
-        //Interfaces
-
-        //Methods      
+        /*
 
         public void AddServices(string name, decimal price)
         {
@@ -83,18 +87,8 @@ namespace Mall.Staff
             }
 
         }
+         
+         */
 
-        public void Sell(string name)
-        {
-            throw new NotImplementedException();
-            //must be linq expression to this.sellables
-        }
-
-        public void MakeDiscount(decimal percent)
-        {
-            throw new NotImplementedException();
-            //must be linq expression to this.sellables
-            //this.Price -= this.Price * (percent / 100);
-        }
     }
 }

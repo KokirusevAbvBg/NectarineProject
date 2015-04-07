@@ -10,12 +10,14 @@ namespace Mall.Staff
     {
         //Fields
         private Floors floor;
-        private double areaRentalPrice;
+        private decimal area;
+        private decimal areaRentalPrice;
         
         //Constructors
-        public Booth(Floors floors, double areaRentalPrice)
+        public Booth(Floors floors,decimal area, decimal areaRentalPrice)
         {
             this.Floor = floor;
+            this.Area = area;
             this.AreaRentalPrice = areaRentalPrice;
         }
 
@@ -26,17 +28,36 @@ namespace Mall.Staff
             private set { this.floor = value; }
         }
 
-        public double AreaRentalPrice
+        public decimal Area
         {
-            get { return areaRentalPrice; }
-            set { areaRentalPrice = value; }
+            get { return this.area; }
+            private set 
+            {
+                if (value >= 0)
+                {
+                    this.area = value; 
+                }
+                else
+                {
+                    throw new ArgumentException("Area must be positive number!");
+                }
+            }
         }
 
-        //Enums
-
-        //Interfaces
-
-        //Methods
-
+        public decimal AreaRentalPrice
+        {
+            get { return areaRentalPrice; }
+            set 
+            {
+                if (value >= 0)
+                {
+                    this.areaRentalPrice = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Rental price must be positive!");
+                }
+            }
+        }
     }
 }

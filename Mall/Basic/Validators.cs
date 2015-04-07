@@ -1,6 +1,7 @@
 ﻿namespace Mall.Staff
 {
     using System;
+    using Mall.Common;
     
     public static class Validators
     {
@@ -11,5 +12,6 @@
                 throw new ArgumentNullException(string.Format("{0} cannot be Null or empty!", fieldName));
             }
         }
+
     }
 }

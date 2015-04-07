@@ -29,6 +29,7 @@
             this.CompanyName = "no-name";
             this.CompanyAccount = new BankBalnce();
         }
+
         public Company(string companyName, decimal initialBalance)
         {
             this.CompanyName = companyName;

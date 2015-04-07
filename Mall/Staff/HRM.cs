@@ -37,6 +37,11 @@
             this.staff = oldList;
         }
 
+        public void GetCompanyWorkers()
+        {
+
+        }
+        
         public void HireCleaner(string name, byte age, Sex gender, decimal initialMoney)
         {
             BaseWorker cleaner = new Cleaner(name,age,gender,initialMoney,360.00m,4,10,Uniform.Cleaner_uniform,Floors.NotAsigned)
@@ -65,6 +70,8 @@
                 Console.WriteLine("Employee {0} who is {1} age old is fired!", name, age);
             }
         }
+
+        public void GiveSmallPrommotion(string )
 
     }
 }
