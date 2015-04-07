@@ -1,7 +1,7 @@
 ﻿namespace Mall.Basic
 {
     using System;
-
+    using Mall.Interfaces;
     class BankBalnce: Balnce, ILoans
     {
         //*************************************************************************** constants

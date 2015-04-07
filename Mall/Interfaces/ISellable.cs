@@ -1,4 +1,4 @@
-﻿namespace Mall.Goods
+﻿namespace Mall.Intefaces
 {
     using System;
 
