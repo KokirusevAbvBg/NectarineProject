@@ -7,11 +7,18 @@ namespace Mall.Basic
 
     public class ProductGenerator
     {
-        public Goods generateGoods() 
-        {
-            string randGoodType;
+        private static Random rand = new Random();
 
-            throw new NotImplementedException();
+        public Goods generateGoods()
+        {
+            string name = "not-set";
+            string goodType = "not-set";
+            int priceGenerator = rand.Next(1, 1000);
+            int quantity = rand.Next(0, 100);
+
+            decimal price = 0.25m * priceGenerator;
+
+            return new Goods(name, goodType, price, quantity);
         }
 
         public ServicesTypes generateServices()
