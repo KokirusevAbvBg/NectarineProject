@@ -14,7 +14,7 @@ namespace Mall.Basic
             throw new NotImplementedException();
         }
 
-        public Services generateServices()
+        public ServicesTypes generateServices()
         {
             throw new NotImplementedException();
         }

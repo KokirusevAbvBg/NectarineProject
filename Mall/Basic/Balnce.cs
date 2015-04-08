@@ -1,4 +1,4 @@
-﻿namespace Mall.Staff
+﻿namespace Mall.Basic
 {
     abstract class Balnce
     {

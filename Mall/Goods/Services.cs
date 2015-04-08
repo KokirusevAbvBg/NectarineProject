@@ -2,25 +2,23 @@
 {
     using System;
     using Mall.Interfaces;
+    using Mall.Basic;
 
     public class Services : Sellable, ISellable
     {
         //*************************************************************************** fields/Properies
-        private string serviceName;
+        private string serviceType;
 
-        public string ServiceName
+        public string ServiceType
         {
             get
             {
-                return this.serviceName;
+                return this.serviceType;
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Service name cannot be null or empty!");
-                }
-                this.serviceName = value;
+                Validators.CheckNullEmptyString(value, "Service type");
+                this.serviceType = value;
             }
         }
 
@@ -29,14 +27,14 @@
 
         public Services()
         {
-            this.ServiceName = "no_service";
+            this.ServiceType = "no_service";
             this.Price = 0;
         }
 
         public Services(string name, decimal price)
         {
-            this.ServiceName = name;
-            this.Price = 0;
+            this.ServiceType = name;
+            this.Price = price;
         }
         
         //*************************************************************************** Methods
@@ -44,10 +42,11 @@
         public override string ToString()
         {
             return string.Format(@"
-    ServiceInfo: 
+    ServiceInfo:
     Description: {0}, 
-    Price: {1}", 
-               this.ServiceName, this.Price);
+    Service Type: {1}
+    Price: {2}", 
+              this.Name, this.ServiceType, this.Price);
         }
     }
 }

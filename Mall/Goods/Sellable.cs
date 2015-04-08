@@ -3,11 +3,14 @@ namespace Mall.Goods
 {
     using System;
     using Mall.Interfaces;
+    using Mall.Basic;
+    using Mall.SpaceHolder;
 
     abstract class Sellable : ISellable
     {
         private decimal price;
-        
+        private string name;
+
         public decimal Price
         {
             get
@@ -28,9 +31,20 @@ namespace Mall.Goods
             
         }
 
-        public abstract void Sell(string name)
+        public string Name
         {
-            
+            get { return this.name; }
+            set
+            {
+                Validators.CheckNullEmptyString(value, "Sellable Name");
+                this.name = value;
+            }
+        }
+
+
+        public abstract void Sell(SpaceHolder spaceholder)
+        {
+            spaceholder.Company.CompanyAccount.GetPaid(this.Price);
         }
 
         public abstract void MakeDiscount(decimal percent)

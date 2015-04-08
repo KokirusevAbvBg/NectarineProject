@@ -21,7 +21,9 @@ namespace Mall.SpaceHolder
         
         private IList<Employee> personal;
 
-        private IList<Sellable> sellables;
+        private IList<Goods> goods;
+
+        private IList<Services> services;
 
         //Constructors
 
@@ -35,7 +37,8 @@ namespace Mall.SpaceHolder
             personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.HR));
             personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Product_Manager));
             personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Advertising));
-            this.sellables = new List<Sellable>();
+            this.goods = new List<Goods>();
+            this.services = new List<Services>();
         }
 
         //Properties
@@ -45,15 +48,29 @@ namespace Mall.SpaceHolder
             get { return this.booth; }
         }
 
-        public List<Sellable> Sellable
+        public IList<Goods> Goods
         {
-            get;
-            set;
+            get { return this.goods; }
+            private set { this.goods = value; }
         }
-        public List<Employee> Employees
+
+        public IList<Services> Services
         {
-            get;
-            set;
+            get { return this.services; }
+            private set { this.services = value; }
+        }
+
+        public IList<Employee> Employees
+        {
+            get
+            {
+                return this.personal;
+            }
+            private set 
+            {
+                this.personal = value;
+            }
+
         }
         public Company Company
         {

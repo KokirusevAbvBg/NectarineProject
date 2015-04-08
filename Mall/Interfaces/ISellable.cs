@@ -1,10 +1,11 @@
 ﻿namespace Mall.Interfaces
 {
     using System;
+    using Mall.SpaceHolder;
 
     public interface ISellable 
     {
-        public void Sell(string name)
+        public void Sell(SpaceHolder spaceholder)
         {
 
         }

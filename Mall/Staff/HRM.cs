@@ -60,9 +60,9 @@
             this.staff.Add(promoter);
         }
 
-        public void Fire(string name, byte age, Uniform uniform)
+        public void Fire(string name, byte age)
         {
-            var maches = this.Staff.FindAll(empl => ((empl.WorkUniform == uniform) && (empl.Name == name) && (empl.Age == age)));
+            var maches = this.Staff.FindAll(empl => ((empl.Name == name) && (empl.Age == age)));
 
             foreach (var item in maches)
             {

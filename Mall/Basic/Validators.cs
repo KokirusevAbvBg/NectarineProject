@@ -1,4 +1,4 @@
-﻿namespace Mall.Staff
+﻿namespace Mall.Basic
 {
     using System;
     using Mall.Common;

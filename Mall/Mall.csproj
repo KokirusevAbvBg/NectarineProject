@@ -53,7 +53,7 @@
     <Compile Include="Common\ManagementType.cs" />
     <Compile Include="Common\PromotionMaterials.cs" />
     <Compile Include="Common\Responsibilities.cs" />
-    <Compile Include="Common\Services.cs" />
+    <Compile Include="Common\ServicesTypes.cs" />
     <Compile Include="Common\Sex.cs" />
     <Compile Include="Common\Uniform.cs" />
     <Compile Include="Common\Weapons.cs" />

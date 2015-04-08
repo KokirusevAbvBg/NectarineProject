@@ -3,6 +3,8 @@
     
     using System;
     using Mall.Interfaces;
+    using Mall.Basic;
+    using Mall.SpaceHolder;
 
     public class Goods : Sellable, ISellable
     {
@@ -12,15 +14,13 @@
         
         //Constructors
 
-        public Goods(string goodType, decimal price, int quantity)
+        public Goods(string name, string goodType, decimal price, int quantity)
         {
+            this.Name = name;
             this.GoodType = goodType;
             this.Price = price;
             this.Quantity = quantity;
         }
-        //Enums
-
-        //Interfaces
 
         //Properties
         public int Quantity
@@ -49,25 +49,27 @@
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Good type name cannot be null or empty!");
-                }
+                Validators.CheckNullEmptyString(value, "Good type");
                 this.goodType = value;
             }
         }
 
-
+        public override void Sell(SpaceHolder spaceholder)
+        {
+            this.Quantity--;
+            spaceholder.Company.CompanyAccount.GetPaid(this.Price);
+        }
 
         //Methods
         public override string ToString()
         {
             string productInfo = string.Format(@"
     GoodsInfo:
-    Type: {0}
-    Price: {1}
-    Quantity: {2}",
-                  this.GoodType, this.Price, this.Quantity);
+    Name: {0}
+    Type: {1}
+    Price: {2}
+    Quantity: {3}",
+                  this.Name, this.GoodType, this.Price, this.Quantity);
             return productInfo;
         }        
     }

@@ -3,9 +3,12 @@
     
     using System;
     using System.Collections.Generic;
+    using System.Linq;
+
     using Mall.SpaceHolder;
     using Mall.Interfaces;
     using Mall.Common;
+    using Mall.Goods;
 
     public class Seller : BaseWorker, IPerson, IEmployee, IPromote
     {
@@ -97,9 +100,19 @@
             return sellerInfo;
         }
 
-        public void Sell()
+        public void Sell(string name, SpaceHolder spaceholder)
         {
-            throw new NotImplementedException();
+            var listOfGoods = spaceholder.Goods;
+
+            var match = listOfSellables.First(sl => sl.Name == name);
+            var goodInst = new Goods("ist", "type", 1,1);
+            var serviceInst = new Services();
+            
+            if (ReferenceEquals(match,goodInst))
+            {
+                
+            }
+            this.Skill += 1;
         }
 
     }

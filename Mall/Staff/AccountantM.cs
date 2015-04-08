@@ -34,6 +34,11 @@
             this.sales = oldList;
         }
 
+        public void AddSell(Sellable item)
+        {
+            sales.Add(item);
+        }
+
         public decimal ShowTotalSalesSum()
         {
             decimal totalSum = 0;

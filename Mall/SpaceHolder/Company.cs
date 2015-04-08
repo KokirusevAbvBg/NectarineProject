@@ -1,6 +1,6 @@
 ﻿namespace Mall.SpaceHolder
 {
-    using Mall.Staff;
+    using Mall.Basic;
 
     class Company
     {

@@ -2,7 +2,7 @@
 
 namespace Mall.Common
 {
-    public enum Services
+    public enum ServicesTypes
     {
         
 

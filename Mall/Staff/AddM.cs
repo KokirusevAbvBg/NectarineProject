@@ -3,6 +3,7 @@ namespace Mall.Staff
 {
     using Mall.Common;
     using Mall.Goods;
+    using Mall.SpaceHolder;
 
     public class AddM : ManagmentWorkers
     {
