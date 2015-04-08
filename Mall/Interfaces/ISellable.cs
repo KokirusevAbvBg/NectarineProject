@@ -5,14 +5,10 @@
 
     public interface ISellable 
     {
-        public void Sell(SpaceHolder spaceholder)
-        {
+        public void Sell(SpaceHolder spaceholder);
 
-        }
 
-        public void MakeDiscount(decimal percent)
-        {
+        public void MakeDiscount(decimal percent);
 
-        }
     }
 }

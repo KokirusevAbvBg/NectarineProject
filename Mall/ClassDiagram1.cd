@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mall.Basic.Balnce" Collapsed="true">
+    <Position X="17" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAgAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Basic\Balnce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Basic.BankBalnce" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gMAACgAAAAIACgAAAAAAAAAAAAAoAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Basic\BankBalnce.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Basic.Customer" Collapsed="true">
+    <Position X="3.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAEAAAAgCAAAA=</HashCode>
+      <FileName>Basic\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Basic.HuamanGenerator" Collapsed="true">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAACAAAAAAAHAQAAgAAAIgAAAACAAAQAA=</HashCode>
+      <FileName>Basic\HuamanGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Basic.ProductGenerator" Collapsed="true">
+    <Position X="21" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAIAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Basic\ProductGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Basic.Validators" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Basic\Validators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Goods.Goods" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="Mall.Goods.Sellable" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="5.562" />
+        <Point X="17.75" Y="6.812" />
+        <Point X="18" Y="6.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEQAAAAAAAAAAAAACAAAAAoAAAACA=</HashCode>
+      <FileName>Goods\Goods.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Goods.Sellable" Collapsed="true">
+    <Position X="17" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAABAAQAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Goods\Sellable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Goods.Services" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.5" />
+    <InheritanceLine Type="Mall.Goods.Sellable" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.75" Y="5.562" />
+        <Point X="17.75" Y="7.769" />
+        <Point X="18" Y="7.769" />
+        <Point X="18" Y="8" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Goods\Services.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.MallMain" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>MallMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.Booth" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAQABAAE=</HashCode>
+      <FileName>SpaceHolder\Booth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.AccountantM" Collapsed="true">
+    <Position X="8" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAABgAAAAAAAAAAAAAgAAAAAAAAAxAAAIIAAACA=</HashCode>
+      <FileName>Staff\AccountantM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.AddM" Collapsed="true">
+    <Position X="9.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAACAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Staff\AddM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.BaseWorker" Collapsed="true">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEQAACAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Staff\BaseWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.Cleaner" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAQEAAAEAAAAAAAEAAAAAAAKAAAAAAA=</HashCode>
+      <FileName>Staff\Cleaner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.Employee" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEDAAAAIAAAAFAAAAAAAAAAAAABAAAAIAAAAAADA=</HashCode>
+      <FileName>Staff\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.HRM" Collapsed="true">
+    <Position X="13.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAIIAAAAAAIUABACAEAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Staff\HRM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.ManagmentWorkers" Collapsed="true">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAJAAAAkQAAAIAAAAAAAAAAAAAIAAAAAACA=</HashCode>
+      <FileName>Staff\ManagmentWorkers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.Person" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACEAEAAgAQAABAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff\Person.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.ProductM" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAIKAgAGQ=</HashCode>
+      <FileName>Staff\ProductM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.Staff.Promoter" Collapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAEAAAAAAAAIAAEACAAAAAKAAAAAAA=</HashCode>
+      <FileName>Staff\Promoter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.Security" Collapsed="true">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEIAAAAEAAAAAAAAAAAEAAAAAAoKAAAIACA=</HashCode>
+      <FileName>Staff\Security.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.Staff.Seller" Collapsed="true">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgEIAAAAEAAAAAAAAQAAQAAAAAAIKAAAAAiA=</HashCode>
+      <FileName>Staff\Seller.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mall.SpaceHolder.Company" Collapsed="true">
+    <Position X="17" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>SpaceHolder\Company.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mall.SpaceHolder.SpaceHolder" BaseTypeListCollapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAYAAABAgAGAAIABAAAAQANIAAADQ=</HashCode>
+      <FileName>SpaceHolder\SpaceHolder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="Mall.Interfaces.IEmployee" Collapsed="true">
+    <Position X="9.25" Y="3" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mall.Interfaces.ILoans" Collapsed="true">
+    <Position X="18.75" Y="2.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILoans.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mall.Interfaces.IPerson" Collapsed="true">
+    <Position X="6.75" Y="1.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPerson.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mall.Interfaces.IPromote" Collapsed="true">
+    <Position X="10.75" Y="3" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACA=</HashCode>
+      <FileName>Interfaces\IPromote.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mall.Interfaces.ISellable" Collapsed="true">
+    <Position X="18.75" Y="5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ISellable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Mall.Common.CleaningStuff" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAEAACAAACAABAAAAACQAABAAAAAAAAAIAAA=</HashCode>
+      <FileName>Common\CleaningStuff.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.FemeleNames" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>MIiYF6AEBBpcASB9UiAwXAPgkJmUAkpAFiytMTIUyEA=</HashCode>
+      <FileName>Common\FemeleNames.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Floors" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAECBAAAAAAAAABAIAAAAAAgAAAAAAAAAAAAABCAAQA=</HashCode>
+      <FileName>Common\Floors.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Foods" Collapsed="true">
+    <Position X="20.5" Y="7" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAwABACAAAAAAFgCAAAABAAIAQAARCgCAAACAAAMA=</HashCode>
+      <FileName>Common\Foods.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.MaleNames" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>mjEBRRjDjAMhhCmSmiFJi5QYDEwKIIqdBlCgkMEAQHE=</HashCode>
+      <FileName>Common\MaleNames.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.ManagementType" Collapsed="true">
+    <Position X="12.75" Y="5.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABgAgAAAAAAAAAAAAABAAIAAAAAAQAAAAA=</HashCode>
+      <FileName>Common\ManagementType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.PromotionMaterials" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAADAAAAAAAwAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\PromotionMaterials.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Responsibilities" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAIAACEAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\Responsibilities.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.ServicesTypes" Collapsed="true">
+    <Position X="22" Y="7" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAgAAAAIAAAABAIAAAAAEEABAAAAAAAAAABAA=</HashCode>
+      <FileName>Common\ServicesTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Sex" Collapsed="true">
+    <Position X="3.5" Y="1.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAEA=</HashCode>
+      <FileName>Common\Sex.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Uniform" Collapsed="true">
+    <Position X="6" Y="3" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAIAAAAAAAAAAAAAAAAAAAEIBAQAAAAAAg=</HashCode>
+      <FileName>Common\Uniform.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Mall.Common.Weapons" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQAgAEAEQAAAACAAAAAAAIAAAAAAgAAAACAI=</HashCode>
+      <FileName>Common\Weapons.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
