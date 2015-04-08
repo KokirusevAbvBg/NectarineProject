@@ -13,5 +13,13 @@
             }
         }
 
+        public static void CheckObjNull(Object obj, string objName)
+        {
+            if (obj.Equals(null))
+            {
+                throw new ArgumentNullException(string.Format("{0} is null!"));
+            }
+        }
+
     }
 }

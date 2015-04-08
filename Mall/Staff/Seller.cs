@@ -9,6 +9,7 @@
     using Mall.Interfaces;
     using Mall.Common;
     using Mall.Goods;
+    using Mall.Basic;
 
     public class Seller : BaseWorker, IPerson, IEmployee, IPromote
     {
@@ -100,19 +101,37 @@
             return sellerInfo;
         }
 
-        public void Sell(string name, SpaceHolder spaceholder)
+        public void SellGoods(string name, SpaceHolder spaceholder)
         {
             var listOfGoods = spaceholder.Goods;
 
-            var match = listOfSellables.First(sl => sl.Name == name);
-            var goodInst = new Goods("ist", "type", 1,1);
-            var serviceInst = new Services();
+            var match = listOfGoods.First(sl => sl.Name == name);
+            Validators.CheckObjNull(match, "SoldGood");
             
-            if (ReferenceEquals(match,goodInst))
+            match.Quantity -= 1;
+
+            spaceholder.Accountant.AddSellGoods(match);
+            spaceholder.Company.CompanyAccount.GetPaid(match.Price);
+
+            if (match.Quantity == 0)
             {
-                
+                spaceholder.ProductManager.RemoveGoods(spaceholder, match);
             }
+
             this.Skill += 1;
+        }
+
+        public void CommitService(string name, SpaceHolder spaceHolder)
+        {
+            var listOfService = spaceHolder.Services;
+            var match = listOfService.First(sl => sl.Name == name);
+            Validators.CheckObjNull(match, "CommitedServce");
+
+            spaceHolder.Accountant.AddSellService(match);
+            spaceHolder.Company.CompanyAccount.GetPaid(match.Price);
+
+            this.Skill += 1;
+
         }
 
     }

@@ -136,5 +136,61 @@
                                                     type);
             return randomManager;
         }
+
+        public static HRM HRMGenerator()
+        {
+            var manger = ManagerGenerator(ManagementType.HR);
+            HRM humanResorse = new HRM(manger.Name,
+                                        manger.Age,
+                                        manger.Gender,
+                                        manger.personalBalance.ShowBalance(),
+                                        manger.Salary,
+                                        manger.Workhours,
+                                        manger.Skill,
+                                        Uniform.Formal_Suit);
+            return humanResorse;
+        }
+
+        public static AccountantM AccountantGenerator()
+        {
+            var manger = ManagerGenerator(ManagementType.Accountant);
+            AccountantM accountant = new AccountantM(manger.Name,
+                                            manger.Age,
+                                            manger.Gender,
+                                            manger.personalBalance.ShowBalance(),
+                                            manger.Salary,
+                                            manger.Workhours,
+                                            manger.Skill,
+                                            Uniform.Formal_Suit);
+            return accountant;
+        }
+
+        public static ProductM ProductManagerGenerator()
+        {
+            var manger = ManagerGenerator(ManagementType.Product_Manager);
+            ProductM prod = new ProductM(manger.Name,
+                                            manger.Age,
+                                            manger.Gender,
+                                            manger.personalBalance.ShowBalance(),
+                                            manger.Salary,
+                                            manger.Workhours,
+                                            manger.Skill,
+                                            Uniform.Formal_Suit);
+            return prod;
+        }
+
+        public static AddM AddvertisingManagerGenerator()
+        {
+            var manger = ManagerGenerator(ManagementType.Advertising);
+            AddM addv = new AddM(manger.Name,
+                                 manger.Age,
+                                 manger.Gender,
+                                 manger.personalBalance.ShowBalance(),
+                                 manger.Salary,
+                                 manger.Workhours,
+                                 manger.Skill,
+                                 Uniform.Formal_Suit);
+            return addv;
+        }
     }
 }

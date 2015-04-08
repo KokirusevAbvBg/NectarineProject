@@ -4,16 +4,18 @@
     using System.Collections.Generic;
     using System.Text;
     using System.Linq;
+    
     using Mall.Goods;
     using Mall.SpaceHolder;
     using Mall.Interfaces;
     using Mall.Common;
+    using Mall.Basic;
 
     class HRM : ManagmentWorkers
     {
-        private List<Employee> staff;
+        private List<BaseWorker> staff;
 
-        public List<Employee> Staff
+        public List<BaseWorker> Staff
         {
             get { return this.staff; }
         }
@@ -25,13 +27,13 @@
         public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform)
             :base(name,age,gender,money,salary,workhours,skill,uniform,ManagementType.HR)
         {
-            this.staff = new List<Employee>();
+            this.staff = new List<BaseWorker>();
         }
         /// <summary>
         /// Asigns new HR and give it the current list of staff
         /// </summary>
         /// <param name="oldList">the current list of staff</param>
-        public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<Employee> oldList)
+        public HRM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<BaseWorkervar> oldList)
             : base(name, age, gender, money, salary, workhours, skill, uniform, ManagementType.HR)
         {
             this.staff = oldList;
@@ -42,21 +44,20 @@
             staff = spaceholder.Employees;
         }
         
-        public void HireCleaner(string name, byte age, Sex gender, decimal initialMoney)
+        public void HireCleaner()
         {
-            BaseWorker cleaner = new Cleaner(name,age,gender,initialMoney,360.00m,4,10,Uniform.Cleaner_uniform,Floors.NotAsigned)
-            this.staff.Add(cleaner);
+            var cleaner = HuamanGenerator.CreateCleaner();
         }
 
-        public void HireSecurity(string name, byte age, Sex gender, decimal initialMoney)
+        public void HireSecurity()
         {
-            BaseWorker security = new Security(name,age,gender,initialMoney,700.00m,8,10,Uniform.Security_uniform,Floors.NotAsigned)
+            var security = HuamanGenerator.CreateSecurity();
             this.staff.Add(security);
         }
 
-        public void HirePromoter(string name, byte age, Sex gender, decimal initialMoney)
+        public void HirePromoter()
         {
-            BaseWorker promoter = new Security(name,age,gender,initialMoney,450.00m,4,10,Uniform.Security_uniform,Floors.NotAsigned)
+            var promoter = HuamanGenerator.CreatePromoter();
             this.staff.Add(promoter);
         }
 
@@ -71,8 +72,9 @@
             }
         }
 
-        public void GiveSmallPrommotion(Employee employee)
+        public void GiveSmallPrommotion(BaseWorker employee)
         {
+           
             employee.SmallPromotion();
         }
 

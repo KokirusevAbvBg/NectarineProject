@@ -1,9 +1,11 @@
 ﻿namespace Mall.Staff
 {
     using System;
+    
     using Mall.Staff;
     using Mall.Interfaces;
     using Mall.Common;
+    using Mall.Basic;
 
     public class Person : IPerson
     {
@@ -19,7 +21,7 @@
             {
                 return this.name;              
             }
-            private set
+            protected set
             {
                 if (string.IsNullOrEmpty(value))
                 {

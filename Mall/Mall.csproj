@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Basic\Balnce.cs" />
     <Compile Include="Basic\BankBalnce.cs" />
+    <Compile Include="Basic\Customer.cs" />
     <Compile Include="Basic\HuamanGenerator.cs" />
     <Compile Include="Basic\ProductGenerator.cs" />
     <Compile Include="Common\CleaningStuff.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Interfaces\IPerson.cs" />
     <Compile Include="Staff\ManagmentWorkers.cs" />
     <Compile Include="Staff\Person.cs" />
+    <Compile Include="Staff\ProductM.cs" />
     <Compile Include="Staff\Promoter.cs" />
     <Compile Include="Staff\Security.cs" />
     <Compile Include="Staff\Seller.cs" />

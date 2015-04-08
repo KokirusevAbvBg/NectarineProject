@@ -2,6 +2,7 @@ namespace Mall.SpaceHolder
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     
     using Mall.Goods;
     using Mall.Interfaces;
@@ -19,11 +20,19 @@ namespace Mall.SpaceHolder
 
         private Booth booth;
         
-        private IList<Employee> personal;
+        private List<BaseWorker> personal;
 
-        private IList<Goods> goods;
+        private HRM humanResourse;
 
-        private IList<Services> services;
+        private AccountantM accountant;
+
+        private AddM advertisingManager;
+
+        private ProductM productManager;
+
+        private List<Goods> goods;
+
+        private List<Services> services;
 
         //Constructors
 
@@ -32,35 +41,63 @@ namespace Mall.SpaceHolder
             this.Company = new Company(companyName, initialBalance);
             this.owner = HuamanGenerator.PersonGenerator();
             this.booth = new Booth(floor, area, rent);
-            this.personal = new List<Employee>();
-            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Accountant));
-            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.HR));
-            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Product_Manager));
-            personal.Add(HuamanGenerator.ManagerGenerator(ManagementType.Advertising));
+            this.personal = new List<BaseWorker>();
+            
+            this.accountant = HuamanGenerator.AccountantGenerator();
+            this.humanResourse = HuamanGenerator.HRMGenerator();
+            this.advertisingManager = HuamanGenerator.AddvertisingManagerGenerator();
+            this.productManager = HuamanGenerator.ProductManagerGenerator();
+
             this.goods = new List<Goods>();
             this.services = new List<Services>();
         }
 
         //Properties
 
+        public HRM HumanResourse
+        {
+            get { return this.humanResourse; }
+        }
+
+        public AccountantM Accountant
+        {
+            get
+            {
+                return this.accountant;
+            }
+        }
+        
+        public ProductM ProductManager
+        {
+            get { return this.productManager; }
+        }
+
+        public AddM AdvertisingManager
+        {
+            get
+            {
+                return this.advertisingManager;
+            }
+        }
+
         public Booth Booth
         {
             get { return this.booth; }
         }
 
-        public IList<Goods> Goods
+        public List<Goods> Goods
         {
             get { return this.goods; }
-            private set { this.goods = value; }
+            protected set { this.goods = value; }
         }
 
-        public IList<Services> Services
+        public List<Services> Services
         {
             get { return this.services; }
-            private set { this.services = value; }
+            protected set { this.services = value; }
         }
 
-        public IList<Employee> Employees
+        public List<BaseWorker> Employees
         {
             get
             {
@@ -72,6 +109,7 @@ namespace Mall.SpaceHolder
             }
 
         }
+       
         public Company Company
         {
             get { return this.company; }

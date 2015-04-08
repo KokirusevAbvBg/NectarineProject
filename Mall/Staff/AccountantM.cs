@@ -9,11 +9,18 @@
 
     public class AccountantM : ManagmentWorkers
     {
-        private List<Sellable> sales;
+        private List<Goods> goods;
 
-        public List<Sellable> Sales
+        public List<Goods> Goods
         {
-            get { return this.sales; }
+            get { return this.goods; }
+        }
+
+        private List<Services> services;
+
+        public List<Services> Services
+        {
+            get { return this.services; }
         }
         
         /// <summary>
@@ -22,29 +29,40 @@
         public AccountantM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform)
             :base(name,age,gender,money,salary,workhours,skill,uniform,ManagementType.Accountant)
         {
-            this.sales = new List<Sellable>();
+            this.goods = new List<Goods>();
+            this.services = new List<Services>();
         }
         /// <summary>
         /// Asigns new Accountant and give it the current list of sales
         /// </summary>
         /// <param name="oldList">the current list of sales</param>
-        public AccountantM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<Sellable> oldList)
+        public AccountantM(string name, byte age, Sex gender, decimal money, decimal salary, int workhours, int skill, Uniform uniform, List<Goods> oldListG, List<Services> oldListS)
             : base(name, age, gender, money, salary, workhours, skill, uniform, ManagementType.Accountant)
         {
-            this.sales = oldList;
+            this.goods = oldListG;
+            this.services = oldListS;
         }
 
-        public void AddSell(Sellable item)
+        public void AddSellGoods(Goods item)
         {
-            sales.Add(item);
+            this.goods.Add(item);
+        }
+
+        public void AddSellService(Services item)
+        {
+            this.services.Add(item);
         }
 
         public decimal ShowTotalSalesSum()
         {
             decimal totalSum = 0;
-            foreach (var item in sales)
+            foreach (var item in goods)
             {
                 totalSum += item.Price;   
+            }
+            foreach (var item in services)
+            {
+                totalSum += item.Price; 
             }
             return totalSum;
         }
